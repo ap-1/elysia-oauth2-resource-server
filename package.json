@@ -1,6 +1,6 @@
 {
 	"name": "elysia-oauth2-resource-server",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "OAuth2 Resource Server middleware for Elysia",
 	"packageManager": "bun@1.2.10",
 	"license": "Apache-2.0",
