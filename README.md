@@ -2,8 +2,8 @@
 
 OAuth2 Resource Server middleware for Elysia, providing local JWT validation against JWKS endpoints. Inspired by the [`tower-oauth2-resource-server`](https://crates.io/crates/tower-oauth2-resource-server) crate for Rust.
 
-[![NPM Version](https://img.shields.io/npm/v/elysia-oauth2-resource-server.svg)](https://www.npmjs.com/package/elysia-oauth2-resource-server)
-[![License](https://img.shields.io/npm/l/elysia-oauth2-resource-server.svg)](https://github.com/ap-1/elysia-oauth2-resource-server/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/elysia-oauth2-resource-server)](https://www.npmjs.com/package/elysia-oauth2-resource-server)
+[![License](https://img.shields.io/npm/l/elysia-oauth2-resource-server)](https://github.com/ap-1/elysia-oauth2-resource-server/blob/main/LICENSE)
 
 ## Features
 
