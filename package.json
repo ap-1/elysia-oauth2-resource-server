@@ -5,6 +5,14 @@
 	"packageManager": "bun@1.2.10",
 	"license": "Apache-2.0",
 	"readme": "README.md",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ap-1/elysia-oauth2-resource-server.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ap-1/elysia-oauth2-resource-server/issues"
+	},
+	"homepage": "https://github.com/ap-1/elysia-oauth2-resource-server#readme",
 	"module": "index.ts",
 	"type": "module",
 	"main": "dist/index.js",
