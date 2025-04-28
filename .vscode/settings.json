@@ -1,0 +1,8 @@
+{
+	"files.readonlyInclude": {
+		"bun.lock": true
+	},
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome"
+}

@@ -1,0 +1,52 @@
+{
+	"name": "elysia-oauth2-resource-server",
+	"version": "0.1.0",
+	"description": "OAuth2 Resource Server middleware for Elysia",
+	"packageManager": "bun@1.2.10",
+	"license": "Apache-2.0",
+	"readme": "README.md",
+	"module": "index.ts",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": ["dist/*", "README.md", "LICENSE", "package.json"],
+	"scripts": {
+		"build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
+		"build": "bun build src/index.ts --outdir dist --target node && bun run build:types",
+		"check:ci": "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
+		"check": "bun run check:ci -- --write --unsafe",
+		"test": "bun test",
+		"preinstall": "npx only-allow bun",
+		"prepare": "husky"
+	},
+	"keywords": [
+		"elysia",
+		"oauth2",
+		"resource-server",
+		"jwt",
+		"jwks",
+		"authorization"
+	],
+	"commitlint": {
+		"extends": ["@commitlint/config-conventional"]
+	},
+	"lint-staged": {
+		"*": ["bun run check"]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@types/bun": "latest",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.1",
+		"typescript": "^5"
+	},
+	"peerDependencies": {
+		"@elysiajs/bearer": "^1.2.0",
+		"elysia": "^1.2.25"
+	},
+	"dependencies": {
+		"jose": "^6.0.10"
+	}
+}
